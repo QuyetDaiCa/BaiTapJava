@@ -23,36 +23,25 @@ public class PhanTuYenNgua {
     }
 
     public static void YenNgua(int arr[][]) {
-        int kt = 0;
-        int minhang[] = new int[10];
-        int maxcot[] = new int[10];
-        for (int i = 0; i < 5; i++) {
-            minhang[i] = arr[i][0];
-            for (int j = 0; j < 4; j++) {
-                if (minhang[i] > arr[i][j]) {
-                    minhang[i] = arr[i][j];
-                }
+        int q = 0;
+        int minHang=0;
+        int maxCot=0;
+        for (int i=0;i<5;i++){
+            minHang = arr[i][0];
+            for (int j=0;j<4;j++){
+                if (minHang>arr[i][j])
+                    minHang = arr[i][j];
+                q = j;
             }
         }
-
-        for (int j = 0; j < 4; j++) {
-            maxcot[j] = arr[0][j];
-            for (int i = 0; i < 5; i++) {
-                if (maxcot[j] < arr[i][j]) {
-                    maxcot[j] = arr[i][j];
-                }
-            }
+        maxCot = minHang;
+        for (int j=0;j<5;j++){
+            if (maxCot<arr[j][q])
+                maxCot = arr[j][q];
         }
-
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 4; j++) {
-                if ((arr[i][j] == minhang[i]) && (arr[i][j] == maxcot[j])) {
-                    System.out.println("Yen ngua = " + arr[i][j]);
-                    kt++;
-                }
-            }
-        }
-        if (kt == 0) System.out.println("Không tồn tại phần tử yên ngựa ");
+        if (minHang==maxCot){
+            System.out.println("Mảng có phần tử yên ngựa là " + maxCot);
+        }else System.out.println("Không tồn tại phần tử yên ngựa trong mảng");
     }
 
     //phần tử yên ngựa nếu nó là phần tử nhỏ nhất trong hàng của nó đồng thời là phần tử lớn nhất trong cột của nó.

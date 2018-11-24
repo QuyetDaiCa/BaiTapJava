@@ -10,8 +10,8 @@ public class KiemTraDiem {
         int r = scanner.nextInt();
         ToaDoDiem toaDoDiemO = new ToaDoDiem();
         ToaDoDiem toaDoDiemA = new ToaDoDiem();
-        toaDoDiemO.nhapToaDo(toaDoDiemO);
-        toaDoDiemA.nhapToaDo(toaDoDiemA);
+        toaDoDiemO.nhapToaDo();
+        toaDoDiemA.nhapToaDo();
         int khoachCachTamDenDiem = (int) Math.sqrt(Math.pow((toaDoDiemA.getHoanhDo() - toaDoDiemO.getHoanhDo()), 2) + Math.pow((toaDoDiemA.getTungDo() - toaDoDiemO.getTungDo()), 2));
         if (khoachCachTamDenDiem == r)
             System.out.println("Điểm A thuộc đường tròn nha");

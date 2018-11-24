@@ -68,7 +68,6 @@ public class Vehicle {
 
         Scanner scanner = new Scanner(System.in);
         // Vehicle vehicle = new Vehicle();-> đặt ngoài vòng for thì mảng chỉ lưu được giá trị cuối cùng
-        for (int i = 0; i < 2; i++) {
             Vehicle vehicle = new Vehicle();
             System.out.println("Nhập tên chủ xe");
             String tenChuXe = scanner.nextLine();
@@ -94,7 +93,7 @@ public class Vehicle {
             arrVehicle.add(vehicle);
         }
 
-    }
+
 
     public void xuatThongTin() {
         System.out.print("Tên chủ xe" + "            " + "Loại xe" + "          " +

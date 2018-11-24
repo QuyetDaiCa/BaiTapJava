@@ -30,7 +30,7 @@ public class ToaDoDiem {
         this.hoanhDo = hoanhDo;
     }
 
-    void nhapToaDo(ToaDoDiem toaDoDiem) {
+    void nhapToaDo() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập hoành độ ");
         int hoanhDo = scanner.nextInt();

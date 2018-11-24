@@ -8,7 +8,7 @@ public class PhanTuYenNgua {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 4; j++) {
                 Random random = new Random();
-                mangHaiChieu[i][j] = 1 + random.nextInt(98);
+                mangHaiChieu[i][j] = 1 + random.nextInt(99);
             }
         }
     }

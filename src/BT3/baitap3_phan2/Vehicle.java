@@ -63,13 +63,13 @@ public class Vehicle {
 
     public static ArrayList<Vehicle> arrVehicle = new ArrayList<Vehicle>();
 
-    public void nhapThongTin(Vehicle vehicle) {
+    public void nhapThongTin() {
         // nhập
 
         Scanner scanner = new Scanner(System.in);
         // Vehicle vehicle = new Vehicle();-> đặt ngoài vòng for thì mảng chỉ lưu được giá trị cuối cùng
         for (int i = 0; i < 2; i++) {
-            vehicle = new Vehicle();
+            Vehicle vehicle = new Vehicle();
             System.out.println("Nhập tên chủ xe");
             String tenChuXe = scanner.nextLine();
             vehicle.setTenChuXe(tenChuXe);

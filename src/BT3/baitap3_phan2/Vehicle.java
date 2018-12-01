@@ -64,10 +64,7 @@ public class Vehicle {
     public static ArrayList<Vehicle> arrVehicle = new ArrayList<Vehicle>();
 
     public void nhapThongTin() {
-        // nhập
-
         Scanner scanner = new Scanner(System.in);
-        // Vehicle vehicle = new Vehicle();-> đặt ngoài vòng for thì mảng chỉ lưu được giá trị cuối cùng
             Vehicle vehicle = new Vehicle();
             System.out.println("Nhập tên chủ xe");
             String tenChuXe = scanner.nextLine();
